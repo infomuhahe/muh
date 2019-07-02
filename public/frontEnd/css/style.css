@@ -1,0 +1,14 @@
+.search{
+ height:29px; width:250px;
+}
+
+.btn-search{
+    border-radius: 18px; height:29px;
+}
+
+.navh{
+    height: 45px;
+}
+.navl{
+    font-size: 30px !important;
+}

@@ -7,7 +7,7 @@
  				<div class="col-sm-4 ">
  						<div class="contactinfo pull-right ">
  								<ul class=" nav nav-pills">
- 									<li><a href="#">Wholesale</a></li>
+ 									<li><a href="/wholesale">Wholesale</a></li>
  									<li ><a href="#" >Affiliate</a></li>
  										<li ><a href="#">Events</a></li>
  										<li ><a href="#">News</a></li>

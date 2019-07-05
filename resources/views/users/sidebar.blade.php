@@ -10,54 +10,24 @@
         
         <ul class="nav-pills nav-stacked nav"><!--  nav-pills nav-stacked nav Begin  -->
             
-            <li class="">
-                
-                <a href="my_account.php?my_orders">
-                    
-                    <i class="fa fa-list"></i> My Orders
-                    
-                </a>
-                
+            <li>
+                <a href="my_account.php?my_orders"><i class="fa fa-list"></i> My Orders</a>   
+            </li>
+
+            <li>
+              <a href="my_account.php?pay_offline"><i class="fa fa-bolt"></i> Pay Offline</a> 
             </li>
             
-            <li class="">
-                
-                <a href="my_account.php?pay_offline">
-                    
-                    <i class="fa fa-bolt"></i> Pay Offline
-                    
-                </a>
-                
+            <li>
+              <a href="/edit"><i class="fa fa-pencil"></i> Edit Account</a> 
             </li>
             
-            <li class="">
-                
-                <a href="/edit">
-                    
-                    <i class="fa fa-pencil"></i> Edit Account
-                    
-                </a>
-                
-            </li>
-            
-            <li class="">
-                
-                <a href="/change-p">
-                    
-                    <i class="fa fa-user"></i> Change Password
-                    
-                </a>
-                
+            <li>
+              <a href="/change-p"><i class="fa fa-user"></i> Change Password</a> 
             </li>
   
             <li>
-                
-                <a href="/logout">
-                    
-                    <i class="fa fa-sign-out"></i> Log Out
-                    
-                </a>
-                
+              <a href="/logout"><i class="fa fa-sign-out"></i> Log Out</a> 
             </li>
             
         </ul><!--  nav-pills nav-stacked nav Begin  -->

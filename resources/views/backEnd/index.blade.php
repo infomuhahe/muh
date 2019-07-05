@@ -4,7 +4,7 @@
     
 <div class="row"><!-- row no: 1 begin -->
     <div class="col-lg-12"><!-- col-lg-12 begin -->
-        <h1 class="page-header"> K-Super Store Dashboard </h1>
+        <h1 class="page-header"> Muhahe Dashboard </h1>
         
         <ol class="breadcrumb"><!-- breadcrumb begin -->
             <li class="active"><!-- active begin -->

@@ -20,7 +20,11 @@ class UsersController extends Controller
            'name'=>'required|string|max:255',
             'email'=>'required|string|email|unique:users,email',
             'password'=>'required|min:6|confirmed',
+            'checkBox'=>'required',
+            'CaptchaCode' => 'required|valid_captcha',
         ]);
+        print('write your other code here.');
+        
         $input_data=$request->all();
         $input_data['password']=Hash::make($input_data['password']);
         User::create($input_data);
@@ -90,5 +94,10 @@ class UsersController extends Controller
         }else{
             return back()->with('oldpassword','Old Password is Inconrrect!');
         }
+    }
+
+    public function terms_conditions(){
+
+        return view('frontEnd.termsConditions');
     }
 }

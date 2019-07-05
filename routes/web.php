@@ -77,16 +77,33 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function (){
     /// ///////// Coupons Area //////////
     Route::resource('/coupon','CouponController');
     Route::get('delete-coupon/{id}','CouponController@destroy');
+    ///////////// Recaptcha code//////////
+    Route::get('/register_user', 'UsersController@index');
+    Route::post('/register_user', 'UsersController@register');
 ///
 
 // Route::get('/edit','UsersController@edit-account');
 
 });
-// Route::get('/edit', function () {
-//     return view('users.edit-account');
-// });
+
+/////////////// terms and conditions for users Route//////////////////////
+Route::get('/termsus', 'UsersController@terms_conditions');
 
 
-// Route::get('/change-p', function () {
-//     return view('users.changepassword');
-// });
+
+///////////////// Wholesale Route /////////////////////////
+Route::get('/wholesale','WholesalesController@index');
+Route::post('/register_wholesale','WholesalesController@register');
+Route::post('/login_wholesale','WholesalesController@login');
+Route::get('/logout','WholesalesController@logout');
+Route::get('/termswh','WholesalesController@terms_conditions');
+
+
+///////////////// Wholesale  Dashboard Route/////////////////////////
+Route::get('/dashWholesale','WholesalesController@logndash');
+Route::get('/verify_account','WholesalesController@verifyaccount');
+Route::get('/upload_products','WholesalesController@uploadproducts');
+Route::get('/editac-whol','WholesalesController@editaccount');
+Route::get('/changep_Whol','WholesalesController@changepassword');
+
+

@@ -18,6 +18,7 @@
     <link href="{{asset('frontEnd/css/corousel.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/searchh.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('frontEnd/css/videobackground.css')}}" rel="stylesheet">
     {{-- My Styles --}}
     <link rel="stylesheet" href="{{asset('frontEnd/styles/style.css')}}">
 
@@ -36,6 +37,7 @@
 @section('slide')
 @yield('content')
 @include('frontEnd.layouts.footer')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="{{asset('frontEnd/js/jquery.js')}}"></script>
 <script src="{{asset('frontEnd/js/script.js')}}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

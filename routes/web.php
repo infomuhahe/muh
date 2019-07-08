@@ -101,9 +101,16 @@ Route::get('/termswh','WholesalesController@terms_conditions');
 
 ///////////////// Wholesale  Dashboard Route/////////////////////////
 Route::get('/dashWholesale','WholesalesController@logndash');
-Route::get('/verify_account','WholesalesController@verifyaccount');
-Route::get('/upload_products','WholesalesController@uploadproducts');
-Route::get('/editac-whol','WholesalesController@editaccount');
-Route::get('/changep_Whol','WholesalesController@changepassword');
+Route::get('/updateProfile','WholesalesController@updateProfile');
+Route::get('/ins_products','WholesalesController@insert_product');
+Route::get('/v_products','WholesalesController@view_product');
+Route::get('/my_profile','WholesalesController@myProfile');
+Route::get('/stores','WholesalesController@store');
+
+
+// Route::get('/verify_account','WholesalesController@verifyaccount');
+// Route::get('/upload_products','WholesalesController@uploadproducts');
+
+// Route::get('/changep_Whol','WholesalesController@changepassword');
 
 

@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Session;
 
 class WholesalesController extends Controller
 {
-    
+
     public function index(){
 
-        return view('wholesale.registerwh');
-        }
-    
-        public function register(Request $request){
+        return view('wholesale.loginwh');
+    }
+
+    public function register(Request $request){
             $this->validate($request,[
             'name'=>'required|string|max:255',
                 'email'=>'required|string|email|unique:users,email',
@@ -28,17 +28,17 @@ class WholesalesController extends Controller
                 'address'=>'required|string|max:255',
                 'password'=>'required|min:6|confirmed',
                 'checkBox'=>'required',
-                
+
             ]);
             print('write your other code here.');
-            
+
             $input_data=$request->all();
             $input_data['password']=Hash::make($input_data['password']);
             Wholesale::create($input_data);
             return back()->with('message','Registered already!');
-        }
+    }
 
-        public function login(Request $request){
+    public function login(Request $request){
             $input_data=$request->all();
             if(Auth::attempt(['email'=>$input_data['email'],'password'=>$input_data['password']])){
                 Session::put('frontSession',$input_data['email']);
@@ -46,21 +46,35 @@ class WholesalesController extends Controller
             }else{
                 return back()->with('message','Account is not Valid!');
             }
-        }
-        public function logout(){
+    }
+    public function logout(){
             Auth::logout();
             Session::forget('frontSession');
             return redirect('/');
-        }
-
-        public function terms_conditions(){
-
-            return view('wholesale.termsconditions_wholesale');
-        }
-
-        public function logndash(){
-
-            return view('wholesale.dashboard');
-         
-        }
     }
+
+    public function terms_conditions(){
+            return view('wholesale.termsconditions_wholesale');
+    }
+    public function insert_product(){
+        return view('wholesale.insert_products');
+    }
+    public function logndash(){
+            return view('wholesale.dashboard');
+    }
+    public function updateProfile(){
+        return view('wholesale.inc.updateprofile');
+    }
+    public function view_product(){
+        return view('wholesale.view_products');
+    }
+    public function myProfile(){
+        return view('wholesale.myProfile');
+    }
+    public function store(){
+        return view('wholesale.dashb');
+    }
+
+
+
+}

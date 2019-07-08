@@ -1,3 +1,4 @@
+
 @extends('wholesale.layouts.master2')
 @section('content')
 
@@ -9,7 +10,10 @@
 
         <div id="page-wrapper"><!-- #page-wrapper begin -->
             <div class="container-fluid"><!-- container-fluid begin -->
-               @include('wholesale.dashb')
+
+            <h2>Hello myProfile Page</h2>
+                <a href="/updateProfile">update profile</a>
+
 
 
             </div><!-- container-fluid finish -->

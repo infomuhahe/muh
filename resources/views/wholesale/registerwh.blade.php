@@ -11,9 +11,9 @@
         @endif
         <div class="row">
             <div class="col-sm-3" >
-               
+
             </div>
-            
+
             <div class="col-sm-6">
                 <h4><strong>Welcome to Wholesale Page</strong></h4>
                 <form action="{{url('/register_wholesale')}}" method="post" >
@@ -26,27 +26,27 @@
 
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email" value="{{old('email')}}">
-                        <span class="text-danger">{{$errors->first('email')}}</span>   
+                        <span class="text-danger">{{$errors->first('email')}}</span>
                     </div>
 
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number" name="phone" value="{{old('phone')}}">
-                        <span class="text-danger">{{$errors->first('phone')}}</span>   
+                        <span class="text-danger">{{$errors->first('phone')}}</span>
                     </div>
 
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Company Name" name="companyname" value="{{old('companyname')}}">
-                        <span class="text-danger">{{$errors->first('companynane')}}</span>   
+                        <span class="text-danger">{{$errors->first('companynane')}}</span>
                     </div>
 
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Country" name="country" value="{{old('country')}}">
-                        <span class="text-danger">{{$errors->first('country')}}</span>   
+                        <span class="text-danger">{{$errors->first('country')}}</span>
                     </div>
 
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address" name="address" value="{{old('address')}}">
-                        <span class="text-danger">{{$errors->first('address')}}</span>   
+                        <span class="text-danger">{{$errors->first('address')}}</span>
                     </div>
 
                     <div class="form-group">
@@ -66,12 +66,11 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    <p>Already have an account?<a href="/register_wholesale">Sign in</a></p>
                     </form>
             </div>
             <div class="col-sm-3"></div>
         </div>
         <div style="margin-bottom: 20px;"></div>
     </div>
-    
+
 @endsection

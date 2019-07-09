@@ -20,8 +20,9 @@
                         </p>
                     </div>
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
-                    </div>
+                    <img src="{{asset('frontEnd/imagepackages/discount.jpeg')}}" class="share img-responsive"  alt="" />
+
+                </div>
                 </div>
                 <div class="row row2">
                     <div class="divdash col-md-6">

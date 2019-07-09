@@ -20,12 +20,12 @@
                         </p>
                     </div>
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
+                               missed image
                     </div>
                 </div>
                 <div class="row row2">
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
+                    missed image
                     </div>
                     <div class="divdash col-md-6">
                         <h4> 2. Create a new store </h4>
@@ -42,7 +42,8 @@
                         </p>
                     </div>
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
+                    <img src="{{asset('frontEnd/imagepackages/shopping-center-clipart-1.jpg')}}" class="share img-responsive"  alt="" />
+
                     </div>
                 </div>
             </div><!-- container-fluid finish -->

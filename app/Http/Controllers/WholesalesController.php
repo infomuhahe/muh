@@ -74,23 +74,26 @@ class WholesalesController extends Controller
     public function store(){
         return view('wholesale.dashb');
     }
-    public function getStarted(){
 
+    public function getStarted(){
         return view('wholesale.getStarted');
     }
-    public function basics(){
 
+    public function basics(){
         return view('wholesale.basics');
     }
-    public function sucessStories(){
 
+    public function sucessStories(){
         return view('wholesale.successStories');
     }
-    public function tools(){
 
+    public function tools(){
         return view('wholesale.tools');
     }
 
+    public function packages(){
+return view('wholesale.packages');
+    }
 
 
 }

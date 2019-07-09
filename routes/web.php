@@ -112,6 +112,7 @@ Route::get('/GetStarted','WholesalesController@getStarted');
 Route::get('/basics','WholesalesController@basics');
 Route::get('/successStories','WholesalesController@sucessStories');
 Route::get('/tools','WholesalesController@tools');
+Route::get('/packages','WholesalesController@packages');
 
 
 // Route::get('/upload_products','WholesalesController@uploadproducts');

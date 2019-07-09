@@ -15,7 +15,7 @@
                         <p>Get your Products discovered by our community and make more sales. Create your own online
                             Store and start selling today!
                         </p>
-                        <a href="#" class="pluslink"><div>
+                        <a href="/packages" class="pluslink"><div>
                             <p class="plus">+ Open new Store</p>
                         </div></a>
                     </div>

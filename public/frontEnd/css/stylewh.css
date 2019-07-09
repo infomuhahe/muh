@@ -283,3 +283,36 @@ hr.dotted{
 .pluslink:active{
     text-decoration: none;
 }
+.packageh{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container-fluid{
+    /* background: red; */
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+.flex-container {
+    padding: 10px;
+    /* background: #0088cc; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    }
+    .package{
+     background: whitesmoke;
+     text-align: center;
+    }
+    .package_header{
+        font-weight: 600;
+        font-size: 20px;
+    }
+   .backgroundpackages img{
+    height: 300px;
+    width: 100%;
+   }
+
+

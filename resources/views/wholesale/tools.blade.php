@@ -18,12 +18,13 @@
                         </p>
                     </div>
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
+                    <img src="{{asset('frontEnd/imagepackages/disc2.jpeg')}}" class="share img-responsive"  alt="" />
+
                     </div>
                 </div>
                 <div class="row row2">
                     <div class="divdash col-md-6">
-                    <img src="{{url('products/small/')}}">
+                    <img src="{{asset('frontEnd/imagepackages/Purple-african-women-shoes-and-bag-set-italian-newest-2018.jpg')}}" class="share img-responsive"  alt="" />
                     </div>
                     <div class="divdash col-md-6">
                         <h4> 2. Photos </h4>

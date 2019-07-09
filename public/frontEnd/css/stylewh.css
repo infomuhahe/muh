@@ -229,13 +229,57 @@ hr.dotted{
     margin-top: 21px;
 }
 .boxdash{
-    width: 27.333333%;
-        margin-right: 10px;
-        background: wheat;
-        margin-top: 1opx;
-        height: 178px;
-        padding-top: 15px;
-    
+    width: 23.333333%;
+    margin-right: 10px;
+    background: ghostwhite;
+    margin-top: 1opx;
+    height: 178px;
+    padding-top: 15px;
 }
-
-
+.headerdash{
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+.row2{
+    height: 240px;
+    display:block;
+}
+.divdash{
+    padding: 26px;
+}
+.row1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: whitesmoke;
+}
+.p1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.succ{
+    width: 23.333333%;
+    margin-top: 23px;
+    padding: 14px;
+}
+.plus{
+    height: 35px;
+    background: red;
+    width: 138px;
+    text-align: center;
+    color: white;
+    margin-left: 116px;
+    padding: 5px;
+}
+.pluslink{
+    text-decoration: none;
+}
+.pluslink:hover{
+    text-decoration: none;
+}
+.pluslink:active{
+    text-decoration: none;
+}

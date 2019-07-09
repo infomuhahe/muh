@@ -107,8 +107,13 @@ Route::get('/v_products','WholesalesController@view_product');
 Route::get('/my_profile','WholesalesController@myProfile');
 Route::get('/stores','WholesalesController@store');
 
+///////////////// Wholesale  Dashboard Packages/////////////////////////
+Route::get('/GetStarted','WholesalesController@getStarted');
+Route::get('/basics','WholesalesController@basics');
+Route::get('/successStories','WholesalesController@sucessStories');
+Route::get('/tools','WholesalesController@tools');
 
-// Route::get('/verify_account','WholesalesController@verifyaccount');
+
 // Route::get('/upload_products','WholesalesController@uploadproducts');
 
 // Route::get('/changep_Whol','WholesalesController@changepassword');

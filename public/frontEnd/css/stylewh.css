@@ -314,5 +314,15 @@ hr.dotted{
     height: 300px;
     width: 100%;
    }
-
+   .row4{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+       padding: 20px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+   .row4 div img{
+    max-width: 70%;
+   }
 

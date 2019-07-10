@@ -332,11 +332,11 @@ body{
 
 /*  For Firefox Only  */
 
-@-moz-document url-prefix(){
-    .form-height-custom{
-        height: auto;
-    }
-}
+/*@-moz-document url-prefix(){*/
+/*    .form-height-custom{*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
 
 
 /*  Footer Styles  */
@@ -344,6 +344,10 @@ body{
 #footer{
     /* background: black; */
     /* opacity: 0.8; */
+    background-image: url("/img/background/nicefooter1.jpg");
+    background-size: cover;
+    position: relative;
+    /* color: white; */
 }
 #footer a{
     color: #999999;
@@ -357,6 +361,9 @@ body{
 }
 #footer h4{
     color: white;
+}
+#footer li:hover{
+    color: #666666;
 }
 #footer a:hover{
     color: #666666;
@@ -393,7 +400,7 @@ body{
     background: #333333; 
     color: white;
     padding: 20px 0px;
-    font-size: 20px;
+    font-size: 25px;
 }
 #copyright p{
     margin: 0px;

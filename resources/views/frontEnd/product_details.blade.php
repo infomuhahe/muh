@@ -52,7 +52,7 @@
                         </select>
                         </span><br>
                         <span>
-                            <span id="dynamic_price">{{$detail_product->price}} Rwf</span>
+                            <span>{{$detail_product->price}} Rwf</span>
                             <label>Quantity:</label>
                             <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
                             @if($totalStock>0)
@@ -70,7 +70,17 @@
                             @endif
                         </p>
                         <p><b>Condition:</b> New</p>
-                        <a href=""><img src="{{asset('frontEnd/images/product-details/share.png')}}" class="share img-responsive"  alt="" /></a>
+
+                        <div id="footer" style="background-color:white;">
+                            <p class="social" >
+                                <a href="https://web.facebook.com/muhahe.muhaheshop.9" target="_blank" class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/muhaheshop" class="fa fa-twitter" target="_blank"></a>
+                                <a href="https://www.instagram.com/muhahe42/" class="fa fa-instagram" target="_blank"></a>
+                                <a href="../#" class="fa fa-google-plus" target="_blank"></a>
+                                <a href="https://www.youtube.com/channel/UCbsvpe6iJUORWAihhWHVB3A" class="fa fa-youtube" target="_blank"></a>
+                            </p>
+                        </div>
+
                     </div><!--/product-information-->
                 </form>
             </div>
@@ -168,7 +178,7 @@
         </div><!--/category-tab--> --}}
 
         <div class="recommended_items"><!--recommended_items-->
-            <h2 class="title text-center">recommended items</h2>
+            <h2 class="title text-center">Related items</h2>
 
             <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -181,10 +191,13 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <img src="{{url('/products/small',$item->image)}}" alt="" style="width: 150px;"/>
-                                                <h2>{{$item->price}}</h2>
+                                            <a>
+                                                    <img src="{{url('/products/small',$item->image)}}" alt="" style="width: 280px;"/>
+                                                
+                                                <h2>{{$item->price}} FRW</h2>
                                                 <p>{{$item->p_name}}</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Details</button>
+                                            </a>
                                             </div>
                                         </div>
                                     </div>

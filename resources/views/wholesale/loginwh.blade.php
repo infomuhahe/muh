@@ -28,6 +28,7 @@
                         <!-- <p>Already have an account?<a href="/register_wholesale">Sign up</a></p> -->
                         <button type="submit" class="btn btn-default">Login</button>
                     </form>
+                    <h3>You don't have an account?? <a href="/wholesale/register">Please register</a></h3>
                 </div><!--/login form-->
             </div>
             <div class="col-sm-4"></div>

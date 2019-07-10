@@ -7,8 +7,8 @@
  				<div class="col-sm-4 ">
  						<div class="contactinfo pull-right ">
  								<ul class=" nav nav-pills">
- 									<li><a href="/wholesale">Wholesale</a></li>
- 									<li ><a href="#" >Affiliate</a></li>
+ 									<li><a href="/wholesale/login">Wholesale</a></li>
+ 										<li ><a href="#" >Affiliate</a></li>
  										<li ><a href="#">Events</a></li>
  										<li ><a href="#">News</a></li>
  									</ul>
@@ -49,42 +49,42 @@
  	</div><!--/header_top-->
 
  	<div class="header-middle"><!--header-middle-->
- 		<div class="container">
- 			<div class="row">
- 				<div class="col-lg-2">
- 					<div class="logo pull-left">
- 						<a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/1ecom-store-logo.png')}}" alt="" /></a>
- 					</div>
- 
- 				</div>
- 				<div class="col-lg-4">
- 						<form class="form-inline my-2 my-lg-0">
- 								<input class="form-control mr-sm-2" type="search" style="width:260px;" placeholder="Search" aria-label="Search">
- 								<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
- 							</form>
- 						</div> 
- 						<div class="col-lg-6">
- 								<div class="shop-menu pull-right">
- 									<ul class="nav navbar-nav">
- 										<li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
- 										@if(Auth::check())
- 											<li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> My Account</a></li>
- 											<li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Logout </a>
- 											</li>
- 										@else
- 											<li><a href="{{url('/login_page')}}"><i class="fa fa-lock"></i> Login</a></li>
- 										@endif
- 										<li>
- 											<a href="{{url('/login_page')}}"><i class="fa fa-user"></i> Register</a>
- 										</li>
- 									</ul>
- 								</div>
- 							</div>      
- 				</div>
- 
- 			</div>
- 		</div>
- 	</div><!--/header-middle-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="logo pull-left">
+						{{-- <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/1ecom-store-logo.png')}}" alt="" /></a> --}}
+						<a href="{{url('/')}}"><h2>muhahe.com</h2></a>
+					</div>
+
+				</div>
+				<div class="col-lg-4" style="margin:20px;">
+					<form class="form-inline ">
+							<input class="form-control mr-sm-2" type="search" style="width:260px;" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div> 
+					<div class="col-lg-5" style="margin:20px;">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								@if(Auth::check())
+									<li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> My Account</a></li>
+									<li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Logout </a>
+									</li>
+								@else
+									<li><a href="{{url('/login_page')}}"><i class="fa fa-lock"></i> Login</a></li>
+								@endif
+								<li>
+									<a href="{{url('/login_page')}}"><i class="fa fa-user"></i> Register</a>
+								</li>
+							</ul>
+						</div>
+					</div>      
+				</div>
+
+			</div>
+	</div><!--/header-middle-->
 
  	<div class="header-bottom"><!--header-bottom-->
  		<div class="container">

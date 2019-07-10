@@ -38,9 +38,6 @@ body{
 
 /*  Top Navigation Styles  */
 
-.top-nav{
-    0 15px;
-}
 
 .top-nav>li{
     float: left;
@@ -229,13 +226,100 @@ hr.dotted{
     margin-top: 21px;
 }
 .boxdash{
-    width: 27.333333%;
-        margin-right: 10px;
-        background: wheat;
-        margin-top: 1opx;
-        height: 178px;
-        padding-top: 15px;
-    
+    width: 23.333333%;
+    margin-right: 10px;
+    background: ghostwhite;
+    margin-top: 1opx;
+    height: 178px;
+    padding-top: 15px;
+}
+.headerdash{
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+.row2{
+    height: 240px;
+    display:block;
+}
+.divdash{
+    padding: 26px;
+}
+.row1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: whitesmoke;
+}
+.p1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.succ{
+    width: 23.333333%;
+    margin-top: 23px;
+    padding: 14px;
+}
+.plus{
+    height: 35px;
+    background: red;
+    width: 138px;
+    text-align: center;
+    color: white;
+    margin-left: 116px;
+    padding: 5px;
+}
+.pluslink{
+    text-decoration: none;
+}
+.pluslink:hover{
+    text-decoration: none;
+}
+.pluslink:active{
+    text-decoration: none;
+}
+.packageh{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
 }
 
+.container-fluid{
+    /* background: red; */
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+.flex-container {
+    padding: 10px;
+    /* background: #0088cc; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    }
+    .package{
+    background: whitesmoke;
+    text-align: center;
+    }
+    .package_header{
+        font-weight: 600;
+        font-size: 20px;
+    }
+.backgroundpackages img{
+    height: 300px;
+    width: 100%;
+}
+.row4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row4 div img{
+    max-width: 70%;
+}
 

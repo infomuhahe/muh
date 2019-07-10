@@ -62,11 +62,12 @@
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkBox">
                         <label class="form-check-label" for="exampleCheck1">Accept</label>
-                        <a href="{{ url('/condi') }}"> Terms and Conditions</a>
+                        <a href="{{ url('/termswh') }}"> Terms and Conditions</a>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                <h3>Already have an account?? <a href="{{url('/wholesale/login')}}">Please login</a></h3>
             </div>
             <div class="col-sm-3"></div>
         </div>

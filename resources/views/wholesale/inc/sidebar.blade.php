@@ -6,19 +6,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>board
         </button>
-            <a href="#" class="navbar-brand">Wholesale Dashboard</a>
+            <a href="/dashboard" class="navbar-brand">Wholesale Dashboard</a>
     </div>
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
     <li>
-            <a href="/dashWholesale">
+            <a href="/dashboard">
                 <i class="fa fa-fw fa-dashboard"></i> Stores
             </a>
         </li>
         <li>
         <li>
             <a href="/my_profile">
-                 <i class="fa fa-fw fa-dashboard"></i> MyProfile
+                <i class="fa fa-fw fa-dashboard"></i> MyProfile
             </a>
         </li>
         <li>
@@ -43,17 +43,17 @@
         </li>
         <li>
             <a href="#">
-                 <i class="fa fa-fw fa-book"></i> Notifications
+                <i class="fa fa-fw fa-book"></i> Notifications
             </a>
         </li>
         <li>
-             <a href="#">
-                 <i class="fa fa-fw fa-money"></i> Orders
+            <a href="#">
+                <i class="fa fa-fw fa-money"></i> Orders
             </a>
         </li>
         <li>
-            <a href="">
-                 <i class="fa fa-fw fa-power-off"></i> Log Out
+            <a href="{{ url('/logout') }}">
+                <i class="fa fa-fw fa-power-off"></i> Log Out
             </a>
         </li>
 

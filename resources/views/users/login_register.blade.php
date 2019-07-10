@@ -50,7 +50,7 @@
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkBox">
                         <label class="form-check-label" for="exampleCheck1">Accept</label>
-                        <a href="{{ url('/condi') }}"> Terms and Conditions</a>
+                        <a href="{{ url('/termsus') }}"> Terms and Conditions</a>
                     </div>
                     <div class="form-group{{ $errors->has('CaptchaCode') ? ' has-error' : '' }}">
                         <label class="col-md-4 control-label">Captcha</label>

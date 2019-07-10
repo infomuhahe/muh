@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Profile_model;
 use App\Wholesale;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -15,13 +15,13 @@ class WholesalesController extends Controller
 
     public function index(){
 
-        return view('wholesale.loginwh');
+        return view('wholesale.registerwh');
     }
 
     public function register(Request $request){
             $this->validate($request,[
             'name'=>'required|string|max:255',
-                'email'=>'required|string|email|unique:users,email',
+                'email'=>'required|string|email|unique:wholesales,email',
                 'phone'=>'required|string|max:255',
                 'companyname'=>'required|string|max:255',
                 'country'=>'required|string|max:255',
@@ -36,6 +36,10 @@ class WholesalesController extends Controller
             $input_data['password']=Hash::make($input_data['password']);
             Wholesale::create($input_data);
             return back()->with('message','Registered already!');
+    }
+
+    public function loginPage(){
+        return view('wholesale.loginwh');
     }
 
     public function login(Request $request){
@@ -69,11 +73,33 @@ class WholesalesController extends Controller
         return view('wholesale.view_products');
     }
     public function myProfile(){
-        return view('wholesale.myProfile');
+        $Profiles = Wholesale::all();
+        return view('wholesale.myProfile',compact('Profiles'));
     }
     public function store(){
         return view('wholesale.dashb');
     }
+
+    public function getStarted(){
+        return view('wholesale.getStarted');
+    }
+
+    public function basics(){
+        return view('wholesale.basics');
+    }
+
+    public function sucessStories(){
+        return view('wholesale.successStories');
+    }
+
+    public function tools(){
+        return view('wholesale.tools');
+    }
+
+    public function packages(){
+return view('wholesale.packages');
+    }
+
 
 
 

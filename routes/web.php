@@ -89,28 +89,35 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function (){
 /////////////// terms and conditions for users Route//////////////////////
 Route::get('/termsus', 'UsersController@terms_conditions');
 
-
-
 ///////////////// Wholesale Route /////////////////////////
-Route::get('/wholesale','WholesalesController@index');
+Route::get('/wholesale/register','WholesalesController@index');
 Route::post('/register_wholesale','WholesalesController@register');
 Route::post('/login_wholesale','WholesalesController@login');
+Route::get('/wholesale/login', 'WholesalesController@loginPage');
 Route::get('/logout','WholesalesController@logout');
 Route::get('/termswh','WholesalesController@terms_conditions');
 
-
 ///////////////// Wholesale  Dashboard Route/////////////////////////
-Route::get('/dashWholesale','WholesalesController@logndash');
+Route::get('/dashboard','WholesalesController@logndash');
 Route::get('/updateProfile','WholesalesController@updateProfile');
 Route::get('/ins_products','WholesalesController@insert_product');
 Route::get('/v_products','WholesalesController@view_product');
 Route::get('/my_profile','WholesalesController@myProfile');
 Route::get('/stores','WholesalesController@store');
 
+///////////////// Wholesale  Dashboard Packages/////////////////////////
+Route::get('/GetStarted','WholesalesController@getStarted');
+Route::get('/basics','WholesalesController@basics');
+Route::get('/successStories','WholesalesController@sucessStories');
+Route::get('/tools','WholesalesController@tools');
+Route::get('/packages','WholesalesController@packages');
 
-// Route::get('/verify_account','WholesalesController@verifyaccount');
-// Route::get('/upload_products','WholesalesController@uploadproducts');
-
-// Route::get('/changep_Whol','WholesalesController@changepassword');
 
 
+////////////////////// Wholesale crud operation ////////////////////////
+
+Route::post('/register_productsWholesale','ProductsWholesales@store');
+
+
+
+////////////////////// Affiliate Route ////////////////////////////////

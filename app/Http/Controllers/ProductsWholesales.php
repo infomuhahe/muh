@@ -20,8 +20,12 @@ class ProductsWholesales extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $Products = ProductsWholesale::orderBy('created_at','desc')->get();
         return view('wholesale.view_products',compact('Products'));
+=======
+        //
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
     }
 
     /**
@@ -54,7 +58,11 @@ class ProductsWholesales extends Controller
         if($request->file('image')){
             $image=$request->file('image');
             if($image->isValid()){
+<<<<<<< HEAD
                 $fileName=time().'-'.str_slug($formInput['name'],"-").'.'.$image->getClientOriginalExtension();
+=======
+                $fileName=time().'-'.str_slug($formInput['p_name'],"-").'.'.$image->getClientOriginalExtension();
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
                 $large_image_path=public_path('products/large/'.$fileName);
                 $medium_image_path=public_path('products/medium/'.$fileName);
                 $small_image_path=public_path('products/small/'.$fileName);
@@ -66,7 +74,11 @@ class ProductsWholesales extends Controller
             }
         }
         ProductsWholesale::create($formInput);
+<<<<<<< HEAD
         return redirect()->route('/register_productsWholesale')->with('message','Add Products Successfully!');
+=======
+        return redirect()->route('wholesale.insert_products')->with('message','Add Products Successfully!');
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
 
     }
 

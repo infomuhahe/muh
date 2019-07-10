@@ -7,12 +7,14 @@
     <meta name="author" content="">
     {{-- <title>@yield('title','Master2 Page')</title> --}}
     <title>Muhahe.com</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link href="{{asset('frontEnd/css/bootstrap-337.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/stylewh.css')}}" rel="stylesheet">
 
 
- 
+
 
     <!--[if lt IE 9]>
     <script src="{{asset('frontEnd/js/html5shiv.js')}}"></script>

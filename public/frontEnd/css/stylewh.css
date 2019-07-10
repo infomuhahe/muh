@@ -300,13 +300,19 @@ hr.dotted{
     grid-gap: 16px;
     }
     .package{
+<<<<<<< HEAD
     background: whitesmoke;
     text-align: center;
+=======
+     background: whitesmoke;
+     text-align: center;
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
     }
     .package_header{
         font-weight: 600;
         font-size: 20px;
     }
+<<<<<<< HEAD
 .backgroundpackages img{
     height: 300px;
     width: 100%;
@@ -322,4 +328,21 @@ hr.dotted{
 .row4 div img{
     max-width: 70%;
 }
+=======
+   .backgroundpackages img{
+    height: 300px;
+    width: 100%;
+   }
+   .row4{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+       padding: 20px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+   .row4 div img{
+    max-width: 70%;
+   }
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
 

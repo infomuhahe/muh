@@ -21,7 +21,11 @@ class WholesalesController extends Controller
     public function register(Request $request){
             $this->validate($request,[
             'name'=>'required|string|max:255',
+<<<<<<< HEAD
                 'email'=>'required|string|email|unique:wholesales,email',
+=======
+                'email'=>'required|string|email|unique:Wholesale,email',
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
                 'phone'=>'required|string|max:255',
                 'companyname'=>'required|string|max:255',
                 'country'=>'required|string|max:255',
@@ -61,6 +65,7 @@ class WholesalesController extends Controller
             return view('wholesale.termsconditions_wholesale');
     }
     public function insert_product(){
+
         return view('wholesale.insert_products');
     }
     public function logndash(){
@@ -70,6 +75,8 @@ class WholesalesController extends Controller
         return view('wholesale.inc.updateprofile');
     }
     public function view_product(){
+
+
         return view('wholesale.view_products');
     }
     public function myProfile(){
@@ -99,8 +106,11 @@ class WholesalesController extends Controller
     public function packages(){
 return view('wholesale.packages');
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
 
 
 }

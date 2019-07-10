@@ -52,8 +52,13 @@
             </a>
         </li>
         <li>
+<<<<<<< HEAD
             <a href="{{ url('/logout') }}">
                 <i class="fa fa-fw fa-power-off"></i> Log Out
+=======
+            <a href="{{ url('/') }}">
+                 <i class="fa fa-fw fa-power-off"></i> Log Out
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
             </a>
         </li>
 

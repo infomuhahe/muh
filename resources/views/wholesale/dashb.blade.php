@@ -21,7 +21,11 @@
                     </div>
                 </div>
                 <div class="same-height-row"><!-- same-height-row Begin -->
+<<<<<<< HEAD
                 <a href="/GetStarted"><div class="boxdash col-sm-4"><!-- col-sm-4 Begin -->
+=======
+                   <a href="/GetStarted"><div class="boxdash col-sm-4"><!-- col-sm-4 Begin -->
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
                         <div class="box same-height"><!-- box same-height Begin -->
                                 <h4>Get Started </h4>
                                     <p>Open a new store and start selling your products</p>
@@ -45,7 +49,11 @@
                                 <p>Open a new store and start selling your products</p>
                     </div><!-- box same-height Finish -->
                 </div></a>
+<<<<<<< HEAD
             </div><!-- same-height-row Finish -->
+=======
+             </div><!-- same-height-row Finish -->
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
             </div>
         </div>
 @endsection

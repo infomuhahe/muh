@@ -22,6 +22,26 @@
                                 <th> Price </th>
                                 <th> Image </th>
                                 <th> Action </th>
+<<<<<<< HEAD
+=======
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+                                <tr><!-- tr begin -->
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> <a href="index.php?edit_product"><i class="fa fa-pencil"></i> Edit</a><a href="index.php?edit_product"><i class="fa fa-pencil"></i> Delete</a></td>
+                                </tr><!-- tr finish -->
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
 
                             </tr>
                         </thead>

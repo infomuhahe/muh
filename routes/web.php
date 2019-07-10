@@ -111,6 +111,7 @@ Route::get('/basics','WholesalesController@basics');
 Route::get('/successStories','WholesalesController@sucessStories');
 Route::get('/tools','WholesalesController@tools');
 Route::get('/packages','WholesalesController@packages');
+<<<<<<< HEAD
 
 
 
@@ -118,6 +119,15 @@ Route::get('/packages','WholesalesController@packages');
 
 Route::post('/register_productsWholesale','ProductsWholesales@store');
 
+=======
+
+
+
+////////////////////// Wholesale crud operation////////////////////////////////////
+
+Route::post('/register_productsWholesale','ProductsWholesales@store');
+
+>>>>>>> 630f57f680b14ca8181f228cdecea722863cbea9
 
 
 ////////////////////// Affiliate Route ////////////////////////////////

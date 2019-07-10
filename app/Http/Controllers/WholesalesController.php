@@ -21,7 +21,7 @@ class WholesalesController extends Controller
     public function register(Request $request){
             $this->validate($request,[
             'name'=>'required|string|max:255',
-                'email'=>'required|string|email|unique:users,email',
+                'email'=>'required|string|email|unique:Wholesale,email',
                 'phone'=>'required|string|max:255',
                 'companyname'=>'required|string|max:255',
                 'country'=>'required|string|max:255',
@@ -57,6 +57,7 @@ class WholesalesController extends Controller
             return view('wholesale.termsconditions_wholesale');
     }
     public function insert_product(){
+
         return view('wholesale.insert_products');
     }
     public function logndash(){
@@ -66,6 +67,8 @@ class WholesalesController extends Controller
         return view('wholesale.inc.updateprofile');
     }
     public function view_product(){
+
+
         return view('wholesale.view_products');
     }
     public function myProfile(){

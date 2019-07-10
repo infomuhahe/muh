@@ -52,7 +52,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{ url('/') }}">
                  <i class="fa fa-fw fa-power-off"></i> Log Out
             </a>
         </li>

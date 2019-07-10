@@ -115,8 +115,10 @@ Route::get('/tools','WholesalesController@tools');
 Route::get('/packages','WholesalesController@packages');
 
 
-// Route::get('/upload_products','WholesalesController@uploadproducts');
 
-// Route::get('/changep_Whol','WholesalesController@changepassword');
+////////////////////// Wholesale crud operation////////////////////////////////////
+
+Route::post('/register_productsWholesale','ProductsWholesales@store');
+
 
 

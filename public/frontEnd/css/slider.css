@@ -1,0 +1,97 @@
+/* Coursel */
+
+.post-coursel{
+    border: 1px solid rebeccapurple;
+    position: relative;
+}
+.post-coursel .post-wrapp{
+    width: 90%;
+    height: 500px;
+    margin: 0px auto;
+    overflow: hidden;
+    border: 1px dashed red;
+}
+
+.post-coursel .post-wrapp .coursel {
+    width: 70%;
+    height: 700px;
+
+}
+.post-coursel .post-wrapp .coursel .slider-coursel{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+/* End coursel */
+
+
+/*Slider for Women clothes*/
+
+
+.post-slider{
+    /* border: 1px solid red; */
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+.post-slider .slider-title{
+    padding-top: 40px;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0ea8d3;
+    text-align: center;
+    text-transform: uppercase;
+}
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 2em;
+    color: #0ea8d3;
+    cursor: pointer;
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 2em;
+    color: #0ea8d3;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+    width: 90%;
+    height: 300px;
+    margin: 0px auto;
+    overflow: hidden;
+    /* border: 1px dashed red; */
+    /* padding-bottom: 40px; */
+}
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 300px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: #ffffff;
+}
+.post-slider .post-wrapper .post .slider-image{
+    width: 65%;
+    height: 300px;
+}
+.post-slider .post-wrapper .post .text .button {
+    text-align: center;
+    clear: both;
+}
+.post-slider .post-wrapper .post .text .button .btn{
+    margin-top: 8px;
+}
+
+.scroll marquee{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0ea8d3;
+}
